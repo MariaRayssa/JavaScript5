@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<p id="p1">Um parágrafo qualquer</p>
+		<input type="number" id="inpt1"><br>
+		<button onclick="executaFatorial()">Clique</button>
+		
+		<script type="text/javascript">
+			function executaFatorial(){
+				let fatorial = 1;
+				let numeroDigitado = document.getElementById("inpt1").value;
+				let expressao = "";
+				
+				numeroDigitado = parseInt(numeroDigitado);
+				
+				for(i=1;i<=numeroDigitado;i++){
+					
+                    fatorial = fatorial * i;
+					if(i!=1){
+						expressao = expressao + "x" + i; 
+					}
+					else{
+						expressao = "1";
+					}
+				}
+				document.write(expressao + " = "+fatorial);
+			}
+			
+			var soma = 2 + numero;
+			const pi = 3.14;
+		</script>
+	</body>
+</html>
